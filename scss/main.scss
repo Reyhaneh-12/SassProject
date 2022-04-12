@@ -1,5 +1,44 @@
-$color:blue;
+@import './variables';
+@import './utilities';
+
+/*------- RESET -------*/
+*{
+    margin: 0;
+    padding: 0;
+}
 
 body{
-    background: $color
+    font-family: "Times New Roman", Times, serif;
+}
+
+/*------- HEADER ------*/
+.header{
+    height: 100vh;
+    background: url('../img/header.jpg') no-repeat center center/cover;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 3rem;
+}
+
+.logo{
+    font-size: 35px;
+    font-family: 'Lobster', cursive;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.itemMenu{
+    padding: 0 0.7rem;
+    color: $text-white;
+    font-size: 20px;
 }
