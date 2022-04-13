@@ -1,7 +1,41 @@
+/*----- Text Color & Background Color ------*/
 .text-primary{
-    color: $text-primary
+    color: $primary-color
 }
 
-.text-white{
-    color: $text-white
+.text-light{
+    color: $light-color
 }
+
+/*----- Button ------*/
+.btn{
+    display: inline-block;
+    font-size: 18px;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    
+}
+
+.btn-primary{
+    background: $primary-color;
+}
+
+/*------ Padding & Margin -------*/
+.p-5{
+    padding: 7rem;
+}
+
+.py-2{
+    padding: 2rem 0;
+}
+.py-5{
+    padding: 7rem 0;
+}
+
+/*------  ------*/
+.text-center{
+    text-align: center;
+}
+

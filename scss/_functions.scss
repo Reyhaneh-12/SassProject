@@ -1,0 +1,15 @@
+@mixin transition ($property, $duration) {
+    --wekit-transition:$property $duration;
+    --ms-transition:$property $duration;
+    --o-transition:$property $duration;
+    transition: $property $duration;
+}
+
+@function set-text-color($color){
+    @if( lightness($color) > 50 ){
+        @return #333;
+    }
+    @else{
+        @return #fff;
+    }
+}

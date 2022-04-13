@@ -1,5 +1,6 @@
-@import './variables';
-@import './utilities';
+@import 'variables';
+@import 'utilities';
+@import 'functions';
 
 /*------- RESET -------*/
 *{
@@ -11,34 +12,79 @@ body{
     font-family: "Times New Roman", Times, serif;
 }
 
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: $light-color
+}
+
 /*------- HEADER ------*/
 .header{
     height: 100vh;
-    background: url('../img/header.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)), url("../img/header.jpg") no-repeat center center/cover;
+
 }
 
-.navbar{
+#navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 50px;
-    padding: 0 3rem;
+    padding: 1.2rem 3rem;
+
+    .logo{
+        font-size: 35px;
+        font-family: 'Lobster', cursive;
+    }
+
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li{
+            padding: 0 0.7rem;
+            font-size: 20px;
+        }
+
+        a{
+            border-bottom: 3px transparent solid;
+            padding-bottom: 0.5rem;
+            @include transition(border-color, 0.5s);
+
+            &:hover{
+                border-color: $medium-color;
+            }
+
+            &.active{
+                border-color: $primary-color;
+            }
+        }
+    }
+    
 }
 
-.logo{
-    font-size: 35px;
-    font-family: 'Lobster', cursive;
-}
-
-.menu{
+#textHeader{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    list-style: none;
-}
 
-.itemMenu{
-    padding: 0 0.7rem;
-    color: $text-white;
-    font-size: 20px;
+    h1{
+        font-size: 50px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    button{
+
+        &:hover{
+            background: $primary-color;
+            color: $light-color
+        }
+    }
 }
