@@ -11,6 +11,9 @@
 .bg-light {
   background: #f4f4f4; }
 
+.bg-dark {
+  background: #333; }
+
 /*----- Button ------*/
 .btn {
   display: inline-block;
@@ -158,3 +161,6 @@ a {
     #section2 .rightSide p {
       width: 75%;
       line-height: 1.4rem; }
+
+#footer {
+  height: 3rem; }
