@@ -87,7 +87,6 @@ a{
 
 #section1{
     .context{
-
         p{
             padding: 1rem 0 2rem;
         }
@@ -117,5 +116,27 @@ a{
 
 
 #section2{
-    background-color: chartreuse;
+    display: flex;
+
+    .leftSide{
+        flex: 1;
+        // background-color: cornflowerblue;
+
+        img{
+            height: 100%;
+            width: 50%;
+            object-fit: cover;
+        }
+    }
+
+    .rightSide{
+        flex: 1;
+        // background-color: darkmagenta;
+
+        p{
+            width: 75%;
+            line-height: 1.4rem;
+
+        }
+    }
 }

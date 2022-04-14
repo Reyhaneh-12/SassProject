@@ -8,6 +8,9 @@
 .text-medium {
   color: #a1a1a1; }
 
+.bg-light {
+  background: #f4f4f4; }
+
 /*----- Button ------*/
 .btn {
   display: inline-block;
@@ -21,6 +24,9 @@
   background: #272791; }
 
 /*------ Padding & Margin -------*/
+.p-2 {
+  padding: 2rem; }
+
 .p-5 {
   padding: 5rem; }
 
@@ -46,14 +52,23 @@
 .text-center {
   text-align: center; }
 
+.text-left {
+  text-align: left; }
+
 .h-100 {
   min-height: 100vh; }
 
 .h-70 {
   min-height: 70vh; }
 
-.f-3 {
-  font-size: 2.7rem; }
+.fs-1 {
+  font-size: 1.2rem; }
+
+.fs-3 {
+  font-size: 3.2rem; }
+
+.fw-bold {
+  font-weight: bold; }
 
 /*------- RESET -------*/
 * {
@@ -131,4 +146,15 @@ a {
       line-height: 1.4rem; }
 
 #section2 {
-  background-color: chartreuse; }
+  display: flex; }
+  #section2 .leftSide {
+    flex: 1; }
+    #section2 .leftSide img {
+      height: 100%;
+      width: 50%;
+      object-fit: cover; }
+  #section2 .rightSide {
+    flex: 1; }
+    #section2 .rightSide p {
+      width: 75%;
+      line-height: 1.4rem; }
