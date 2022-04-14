@@ -5,6 +5,9 @@
 .text-light {
   color: #f4f4f4; }
 
+.text-medium {
+  color: #a1a1a1; }
+
 /*----- Button ------*/
 .btn {
   display: inline-block;
@@ -19,17 +22,38 @@
 
 /*------ Padding & Margin -------*/
 .p-5 {
-  padding: 7rem; }
+  padding: 5rem; }
+
+.px-1 {
+  padding: 0 1.2rem; }
+
+.px-5 {
+  padding: 0 5rem; }
+
+.py-1 {
+  padding: 1.2rem 0; }
 
 .py-2 {
   padding: 2rem 0; }
 
 .py-5 {
+  padding: 5rem 0; }
+
+.py-7 {
   padding: 7rem 0; }
 
 /*------  ------*/
 .text-center {
   text-align: center; }
+
+.h-100 {
+  min-height: 100vh; }
+
+.h-70 {
+  min-height: 70vh; }
+
+.f-3 {
+  font-size: 2.7rem; }
 
 /*------- RESET -------*/
 * {
@@ -75,7 +99,7 @@ a {
       --o-transition:$property $duration;
       transition: border-color 0.5s; }
       #navbar ul a:hover {
-        border-color: #ccc; }
+        border-color: #a1a1a1; }
       #navbar ul a.active {
         border-color: #272791; }
 
@@ -83,10 +107,28 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  #textHeader h1 {
-    font-size: 50px; }
   #textHeader p {
     font-size: 20px; }
   #textHeader button:hover {
     background: #272791;
     color: #f4f4f4; }
+
+#section1 .context p {
+  padding: 1rem 0 2rem; }
+
+#section1 .items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  #section1 .items .item {
+    height: 100%;
+    margin: 0px 10px; }
+    #section1 .items .item img {
+      height: 200px;
+      width: 100%;
+      object-fit: cover; }
+    #section1 .items .item p {
+      line-height: 1.4rem; }
+
+#section2 {
+  background-color: chartreuse; }
